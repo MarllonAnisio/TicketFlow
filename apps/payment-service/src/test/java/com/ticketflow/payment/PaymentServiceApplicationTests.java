@@ -1,4 +1,4 @@
-package com.ticketflow.payment_service;
+package com.ticketflow.payment;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

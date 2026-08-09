@@ -1,4 +1,4 @@
-package com.ticketflow.event_service;
+package com.ticketflow.event;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,13 +1,13 @@
-package com.ticketflow.payment_service;
+package com.ticketflow.ticket;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PaymentServiceApplication {
+public class TicketServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PaymentServiceApplication.class, args);
+		SpringApplication.run(TicketServiceApplication.class, args);
 	}
 
 }

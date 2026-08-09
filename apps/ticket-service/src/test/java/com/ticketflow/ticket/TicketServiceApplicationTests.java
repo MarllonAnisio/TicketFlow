@@ -1,10 +1,10 @@
-package com.ticketflow.eureka_server;
+package com.ticketflow.ticket;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EurekaServerApplicationTests {
+class TicketServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

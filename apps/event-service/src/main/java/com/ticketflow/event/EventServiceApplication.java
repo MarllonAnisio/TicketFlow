@@ -1,13 +1,13 @@
-package com.ticketflow.ticket_service;
+package com.ticketflow.event;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TicketServiceApplication {
+public class EventServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TicketServiceApplication.class, args);
+		SpringApplication.run(EventServiceApplication.class, args);
 	}
 
 }
