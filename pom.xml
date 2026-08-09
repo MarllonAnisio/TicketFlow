@@ -16,6 +16,16 @@
     <packaging>pom</packaging>
     <name>ticketflow-parent</name>
     <description>Monorepo do Sistema Distribuído TicketFlow</description>
+
+    <developers>
+        <developer>
+            <name>Marllon Anisio</name>
+            <url>https://github.com/MarllonAnisio</url>
+            <properties>
+                <linkedin>https://linkedin.com/in/marllon-anisio</linkedin>
+            </properties>
+        </developer>
+    </developers>
     
     <!-- Módulos do Monorepo organizados em sub-pastas -->
     <modules>
