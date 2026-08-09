@@ -19,7 +19,7 @@
 
     <developers>
         <developer>
-            <name>Marllon Anisio</name>
+            <name>Marllon Anisio Martins Camelo</name>
             <url>https://github.com/MarllonAnisio</url>
             <properties>
                 <linkedin>https://linkedin.com/in/marllon-anisio</linkedin>
@@ -55,6 +55,8 @@
         <redisson.version>3.32.0</redisson.version>
         <springdoc.version>2.6.0</springdoc.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <testcontainers.version>1.20.1</testcontainers.version>
+        <loki4j.version>1.5.2</loki4j.version>
         <gatling.version>3.11.5</gatling.version>
     </properties>
 
@@ -110,8 +112,26 @@
                 <artifactId>mapstruct</artifactId>
                 <version>${mapstruct.version}</version>
             </dependency>
+
+            <!-- Testcontainers BOM -->
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>testcontainers-bom</artifactId>
+                <version>${testcontainers.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <!-- Dependências globais (todos os módulos herdam) -->
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -120,6 +140,17 @@
                 <configuration>
                     <source>21</source>
                     <target>21</target>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </path>
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct-processor</artifactId>
+                            <version>${mapstruct.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
                 </configuration>
             </plugin>
         </plugins>
