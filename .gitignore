@@ -51,3 +51,8 @@ logs/
 # Docker
 # ============================
 docker-compose.override.yml
+
+# ============================
+# Obsidian
+# ============================
+docs/.obsidian/
